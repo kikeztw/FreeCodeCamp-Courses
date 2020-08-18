@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+  .navbar-brackground-color{
+    background-color: #0a0a23;
+  }
+  .flex-auto{
+    flex: auto
+  }
+
+  #video{
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .z-100{
+    z-index: 100;
+  }
+</style>
+<body class="d-flex flex-column mb-5">
+  <header class="position-fixed w-100 z-100" id="header">
+    <nav class="navbar navbar-expand-lg navbar-brackground-color" id="nav-bar">
+      <a class="navbar-brand" href="#">
+        <img src="https://design-style-guide.freecodecamp.org/downloads/fcc_primary_large.jpg" id="header-img" alt="logo" width="250"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text text-light" href="#products">Products<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="form" action="https://www.freecodecamp.com/email-submit">
+          <input class="form-control mr-sm-2 text-light" type="email" placeholder="Email" id="email" name="email" required>
+          <input class="btn btn-primary my-2 my-sm-0" type="submit" id="submit">Submit</input>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <section class="container mb-5 pt-5 pb-5 mt-5">
+    <div class="row">
+      <div class="col-12">
+        <iframe 
+          class="d-block m-auto"
+          id="video"
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/PkZNo7MFNFg?rel=0&amp;controls=0&amp;showinfo=0" 
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+      </iframe>
+      </div>
+    </div>
+  </section>
+  <section class="container mt-5" id="products">
+    <div class="pt-5 pb-5">
+      <h2 class="text-center h2">Recents Videos</h2>
+    </div>
+    <div class="row flex-auto d-flex justify-content-between align-items-stretch">
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i.ytimg.com/vi/RBSGKlAvoiM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAqPtkjM41OpHcyuRq7pVFXyljzZA" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer</h5>
+            <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i.ytimg.com/vi/rfscVS0vtbw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCz7CDfmvmCVjgCG0lpvDTy4M2uAw" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Learn Python - Full Course for Beginners [Tutorial]</h5>
+            <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i.ytimg.com/vi/GZvSYJDk-us/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCoxs8853qlhfyfnwCKNeoxS3GOEQ" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">APIs for Beginners - How to use an API (Full Course)</h5>
+            <a href="#https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container mt-5" id="courses">
+    <div class="pt-5 pb-5">
+      <h2 class="text-center h2">Courses</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Responsive web Design Certification (300 hr)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">JavaScript Algorithms and Data Structures Certification (300 hours)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Front End Libraries Certification (300 hours)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Data Visualization Certification (300 hours)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">APIs and Microservices Certification (300 hours)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Information Security and Quality Assurance Certification (300 hours)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-3">
+        <div class="card h-100">
+          <img src="https://i2.wp.com/www.axogeek.com/wp-content/uploads/2019/09/w-1500_h-auto_m-fit_s-any__Free-code-camp-banner.jpg?resize=768%2C424&ssl=1" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Coding Interview Prep (Thousands of hours of challenges)</h5>
+            <a href="https://www.freecodecamp.org/learn" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container h-100 mt-5 pt-5" id="about">
+    <h2 class="text-center h2 mb-4">About FreeCodeCamp</h2>
+    <p>
+      freeCodeCamp (also referred to as “Free Code Camp”) is a non-profit organization[3] that consists of an interactive learning web platform, an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to anyone. Beginning with tutorials that introduce students to HTML, CSS and JavaScript, students progress to project assignments that they must complete either alone or in pairs. Upon completion of all project tasks, students are partnered with other nonprofits to build web applications, giving the students practical development experience.
+    </p>
+  </section>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

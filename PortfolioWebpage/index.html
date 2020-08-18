@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d7aacd0203.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: #000000;
+      padding-bottom: 5em;
+    }
+    .font-family{
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .hero-title-container{
+      margin-top: 15em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .secondary-title{
+      font-size: 3em;
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+    }
+    .main-title{
+      font-size: 10em;
+      color: #2f54eb;
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar-bg{
+      background-color: #000000;
+    }
+    .hero-footer{
+      bottom: 10%;
+      margin: auto;
+    }
+
+    @media screen and (max-width: 768px){
+      .main-title{
+        font-size: 5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+
+    <header class="container-fluid ">
+      <nav class="navbar navbar-expand-lg">
+        <div class="collapse navbar-collapse fixed-top" id="navbar">
+          <ul class="nav justify-content-center w-100  navbar-bg z-100">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="position-relative d-flex flex-column align-items-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center hero-title-container vh-100" id="welcome-section">
+              <h3 class="text-light secondary-title"> Hey im </h3>
+              <h1 class="h1 main-title">Carlos</h1>
+              <h5  class="text-light secondary-title">Web developer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row position-absolute hero-footer w-100">
+          <div class="col-8 col-md-4 m-auto">
+            <div class="d-flex justify-content-between">
+              <a class="text-light" id="profile-link" href="https://github.com/kikeztw" target="_blank">
+                <i class="fab fa-github"></i>
+                Github
+              </a>
+              <a  class=" text-light">
+                <i class="fab fa-twitter-square"></i>
+                Twitter
+              </a>
+              <a  class=" text-light">
+                <i class="fab fa-codepen"></i>
+                Code Pen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="text-light text-center mb-5 h1">My Projects</h2>
+      <div class="container ">
+        <div class="row">
+          <div class="col-12 col-md-4 project-tile">
+            <div class="card">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Build a Tribute Page</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"> HTML, CSS, Visual Design, Accessibility.</h6>
+                  <p class="card-text pt-3">Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.</p>
+                  <a href="https://codepen.io/Kikeztw/pen/gOpXPoV" class="card-link">View Project</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 project-tile">
+          <div class="card">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Build a Survey Form</h5>
+                <h6 class="card-subtitle mb-2 text-muted"> HTML, CSS, Visual Design, Accessibility.</h6>
+                <p class="card-text pt-3">Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.</p>
+                <a href="https://codepen.io/Kikeztw/pen/KKpJpJZ" class="card-link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 project-tile">
+          <div class="card">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Product Landing Page</h5>
+                <h6 class="card-subtitle mb-2 text-muted"> HTML, CSS, Visual Design, Accessibility.</h6>
+                <p class="card-text pt-3">Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.</p>
+                <a href="https://codepen.io/Kikeztw/pen/eYNxzRX" class="card-link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-md-4 project-tile">
+            <div class="card">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Technical Documentation Page</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"> HTML, CSS, Visual Design, Accessibility.</h6>
+                  <p class="card-text pt-3">Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.</p>
+                  <a href="https://codepen.io/Kikeztw/pen/NWGqwMM" class="card-link">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+ 
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</body>
+</html>

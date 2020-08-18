@@ -1,0 +1,82 @@
+html{
+  min-height: 100%;
+  height: 100%;
+ 
+}
+
+body{
+  height: 100%;
+  background-color: #ff4d4f;
+}
+
+.background{
+  padding: 2em;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container{
+  width: 75px;
+  height: auto;
+  position: absolute;
+  animation-name: survey-form;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  transition: all .5s ease;
+}
+
+@keyframes survey-form {
+  0%{
+    transform: translate3d(0,-4px,0);
+  }
+  100%{
+    transform: translate3d(0,4px,0);
+  }
+}
+
+.icon-container:nth-child(1){
+  top: 75%;
+  right: 25%;
+  animation-delay: .4s;
+}
+
+
+.icon-container:nth-child(2){
+  top: 15%;
+  right: 25%;
+}
+
+
+.icon-container:nth-child(3){
+  top: 8%;
+  left: 15%;
+  animation-delay: .4s;
+}
+
+.icon-container:nth-child(4){
+  left: 15%;
+  bottom: 15%;
+  animation-delay: .5s;
+}
+
+.icon-container:nth-child(5){
+  top: 40%;
+  left: 35%;
+}
+
+
+@media screen and (max-width: 768px){
+  html{
+    height: auto;
+  }
+
+  body{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
