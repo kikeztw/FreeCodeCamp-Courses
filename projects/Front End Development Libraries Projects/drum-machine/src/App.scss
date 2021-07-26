@@ -1,0 +1,13 @@
+.drum{
+  &-machine{
+    max-width: 420px;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &-pad{
+    width: 100px;
+    height: 100px;
+  }
+}
