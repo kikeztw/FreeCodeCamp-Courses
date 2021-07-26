@@ -1,1 +1,1 @@
-# FreeCodeCampProjects
+# FreeCodeCamp Courses
